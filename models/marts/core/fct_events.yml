@@ -1,0 +1,26 @@
+models:
+  - name: fct_events
+    description: >
+      This model contains events from the bingeflix application.
+    columns:
+      - name: event_id
+        description: '{{ doc("event_id") }}'
+        tests:
+          - unique
+          - not_null
+
+      - name: session_id
+        description: '{{ doc("bingeflix_session_id") }}'
+        tests:
+          - not_null
+
+      - name: user_id
+        description: '{{ doc("bingeflix_user_id") }}'
+        tests:
+          - not_null
+
+      - name: created_at
+        description: '{{ doc("event_created_at") }}'
+
+      - name: event_name
+        description: '{{ doc("event_name") }}'
