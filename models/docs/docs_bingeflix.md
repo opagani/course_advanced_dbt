@@ -26,3 +26,11 @@ The name of the event
 {% docs event_id %}
 The unique identifier of the event
 {% enddocs %}
+
+{% docs first_subscription_starts_at %}
+The first_subscription_starts_at of the event
+{% enddocs %}
+
+{% docs count_of_subscriptions %}
+The count_of_subscriptions of the event
+{% enddocs %}
